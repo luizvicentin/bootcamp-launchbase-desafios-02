@@ -1,0 +1,145 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap";
+
+:root {
+    --color-background: #121214;
+    --color-green: #04d361;
+    --color-red: #e83f5b;
+    --color-orange: #fd951f;
+    --color-yellow: #f7df1e;
+    --color-primary: #8257e6;
+    --color-primary-hover: #9466ff;
+    --color-secondary: #e1e1e6;
+    --color-text: #a8a8b3;
+    --color-support: #737380;
+    --color-shape: #202024;
+    --color-shape-hover: #29292e;
+    --color-icons: #41414d;
+    --color-borders: #323238;
+    --color-black: #0d0d0f;
+    --color-border: #282a36;
+}
+
+main {
+    padding: 50px;
+    display: block;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 64px;
+    line-height: 74px;
+    font-weight: 700;
+    max-width: 615px;
+    margin: auto;
+    padding-bottom:15px;
+    color: var(--color-secondary);
+}
+
+.about h2 {
+    font-size: 36px;
+    line-height: 46px;
+    padding: 15px;
+    color: var(--color-text);
+}
+
+.about span {
+    font-weight: 700;
+    border-bottom: 2px solid var(--color-green);
+}
+
+.about p {
+    max-width: 90%;
+    margin: 30px auto;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.headline img {
+    width: 100%;
+    height: 100%;
+    margin: 32px auto;
+    padding: 16px;
+}
+
+.tec {
+    display: block;
+    padding-bottom: 30px;
+}
+
+.tec h2 {
+    font-size: 36px;
+    line-height: 46px;
+    padding: 25px;
+    color: var(--color-text);
+}
+
+.tec-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    cursor: pointer;
+}
+
+.tec-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 24px;
+    background: var(--color-shape);
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.tec-list li:hover {
+    background: var(--color-shape-hover);
+}
+
+.tec-list li a {
+    color: var(--color-secondary);
+    padding: 10px;
+}
+
+
+
+.tec-list img {
+    width: 100px;
+    height: 100px;
+    padding: 10px auto;
+    border-radius: 8px; 
+}
+
+.tec-list span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 3px;   
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.footer ul {
+    display: inline-flex;
+    margin: 16px;
+    padding: 16px;
+}
+
+.footer li a {
+    padding: 0 20px;
+    font-size: 18px;
+    color: var(--color-text);  
+}
+
+.footer li a:hover {
+    color: var(--color-orange);
+}
+
+.boost {
+    padding: 0 20px;
+    font-size: 20px;
+    color: var(--color-green);
+}
+
