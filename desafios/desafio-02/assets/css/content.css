@@ -17,57 +17,101 @@
     --color-borders: #323238;
     --color-black: #0d0d0f;
     --color-border: #282a36;
+    --border-radius-primary: 36px;
+    --border-radius-secondary: 8px;
 }
 
-*, ::before, ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-}
-
-body {
+main {
+    padding: 20px;
     display: block;
-    background: var(--color-background);
-    font-family: 'Roboto', sans-serif;
-    color: #d6d3d3; 
+    text-align: center;
 }
 
-.header {
-    background: var(--color-shape);
-    height: 72px;
-    display: flex;
-    align-items: center;
-    padding: 0px 30px;
-}
-
-.header-itens {
-    width: 100%;
-    max-width: 90%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;   
-}
-
-.logo {
-   margin-right: auto; 
-}
-
-.nav_links li {
-    display: inline-block;
-    padding: 0 20px; 
-}
-
-.nav_links li a {
-    color: var(--color-text);
-    transition: all 0.2s ease 0s;
-}
-
-.nav_links li a:hover {
+.content h1 {
+    font-size: 64px;
+    line-height: 74px;
+    font-weight: 700;
+    max-width: 615px;
+    margin: auto;
+    padding-bottom: 8px;
     color: var(--color-secondary);
 }
+
+.content h2 {
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 24px;
+    color: var(--color-text);
+}
+
+.content span {
+    font-weight: 700;
+    border-bottom: 3px solid var(--color-green);
+}
+
+.articles {
+    max-width: 95%;
+    margin: auto;
+    padding: 24px 0;
+}
+
+.focus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    left: 0;
+    top: 0;
+    
+}
+
+.focus .featured-image img {
+    width: 100%;
+    border-radius: var(--border-radius-secondary); 
+}
+
+.focus h2 {
+    max-width: 400px;
+    font-size: 48px;
+    font-weight: 600;
+    margin: auto;
+    text-align: start;
+    line-height: 1.2;
+    color: var(--color-secondary); 
+}
+
+.posts {
+    max-width: 95%;
+    margin: auto;
+    padding: 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.article {
+    background: var(--color-shape);
+    width: 90%;
+    height: 45vh;
+    border-radius: var(--border-radius-primary);
+}
+
+.article:hover {
+    transform: translateY(-1%);
+    transition: 0.5s;
+}
+
+.article img {
+    width: 100%;
+    border-radius: 36px 36px 0 0;
+}
+
+.article h2 {
+    max-width: 250px;
+    margin: auto;
+    padding: 16px; 
+    text-align: center;  
+}
+    
+    
 
 
 
