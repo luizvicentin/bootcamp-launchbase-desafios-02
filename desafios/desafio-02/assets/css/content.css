@@ -28,12 +28,22 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 64px;
+    line-height: 74px;
+    font-weight: 700;
+    text-align: center;
+    margin: 16px auto;
+    padding-bottom:8px;
+    color: var(--color-secondary);
+}
+
 .cards {
     max-width: 75%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
-    margin: 36px auto;
+    margin: 16px auto;
 }
 
 .card {
